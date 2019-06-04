@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="fonts\fontawesome-free-5.8.2-web\fontawesome-free-5.8.2-web\css\all.min.css"> -->
+    <link rel="stylesheet" href="css\mystyle.css">
+    <link rel="stylesheet" href="css\particles.css">
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light top-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="font-size:2.25rem;">
+            <img src="images\community-library.png" width="60" height="60" class="d-inline-block align-top" alt="">
+            Library
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TBA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TBA</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header section -->
+
+    <!-- Background Section -->
+    <section class="section1">
+      <div id="particles-js"></div>
+
+      <div class="text">
+      	<h1>Department of Mathematics</h1>
+      	<p>Welcome to E-Library</p>
+      </div>
+    </section>
+    <!-- End of Background Section -->
+    <!-- Login section  -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <!-- Card -->
+            <div class="card testimonial-card" style="border:unset;">
+              <div class="card-up indigo lighten-1"></div>
+              <div class="avatar mx-auto">
+                <a href="#" data-toggle="modal" data-target="#hodModal">
+                <img src="images\mortarboard.png" class="rounded-circle" alt="HOD avatar">
+                </a>
+              </div>
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">HOD Section</h4>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-4">
+            <!-- Card -->
+            <div class="card testimonial-card" style="border:unset;">
+              <div class="card-up indigo lighten-1"></div>
+              <div class="avatar mx-auto">
+                <a href="#" data-toggle="modal" data-target="#LibrarianModal">
+                <img src="images\teacher_icon.png" class="rounded-circle" alt="Librarian avatar">
+                </a>
+              </div>
+              <div class="card-body">
+                <hr class="hr-class">
+                <h4 class="card-title">Librarian Section</h4>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <div class="col-4">
+            <!-- Card -->
+            <div class="card testimonial-card" style="border:unset;">
+              <div class="card-up indigo lighten-1"></div>
+              <div class="staffmodal avatar mx-auto">
+                <a href="#" data-toggle="modal" data-target="#StaffModal">
+                <img src="images\staff_classroom.png" class="rounded-circle" alt="Staff avatar">
+                </a>
+              </div>
+              <div class="card-body">
+                <hr>
+                <h4 class="card-title">Staff Section</h4>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Login Section -->
+
+    <!-- 3 Modals starts here -->
+    <!-- modal - 1 -->
+    <div class="modal fade" id="hodModal" tabindex="-1" role="dialog" aria-labelledby="hodModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="border:unset;">
+          <div class="modal-body" style="padding:unset;">
+          <!-- Popup modal - librarian -->
+            <div class="wrap-librarian">
+              <div class="login-librarian-form-title" style="background-image: url(images/library_png.png);">
+                <span class="login-librarian-form-title-1">
+                  HOD Section
+                </span>
+              </div>
+              <form class="login-librarian-form">
+                <div class="wrap-librarian-input" data-validate="Username is required" style="margin-bottom:26px;" >
+                  <span class="label-librarian-input">Username</span>
+                  <input class="librarian-input" type="text" name="username" placeholder="Enter username" autocomplete="off">
+                  <span class="focus-librarian-input"></span>
+                </div>
+                <div class="wrap-librarian-input" data-validate = "Password is required" style="margin-bottom:18px;">
+                  <span class="label-librarian-input">Password</span>
+                  <input class="librarian-input" type="password" name="pass" placeholder="Enter password">
+                  <span class="focus-librarian-input"></span>
+                </div>
+                <div class="librarian-flex-sb-m" style="padding-bottom:30px; width:100%;">
+                  <div>
+                    <a href="#" class="librarian-txt1">
+                      Forgot Password?
+                    </a>
+                  </div>
+                </div>
+                <div class="container-librarian-login-form-btn" style="display:flex;">
+                  <button class="login-librarian-form-btn">
+                    Login
+                  </button>
+                  <button class="cancel-librarian-form-btn" data-dismiss="modal" style="background-color: #ed553b">
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+          <!-- End of Librarian MOdal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of modal -1 -->
+
+    <!-- modal - 2 -->
+    <div class="modal fade" id="LibrarianModal" tabindex="-1" role="dialog" aria-labelledby="LibrarianModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="border:unset;">
+          <div class="modal-body" style="padding:0px;">
+          <!-- Popup modal - librarian -->
+            <div class="wrap-librarian">
+              <div class="login-librarian-form-title" style="background-image: url(images/library_png.png);">
+                <span class="login-librarian-form-title-1">
+                  Librarian Section
+                </span>
+              </div>
+              <form class="login-librarian-form">
+                <div class="wrap-librarian-input" data-validate="Username is required" style="margin-bottom:26px;" >
+                  <span class="label-librarian-input">Username</span>
+                  <input class="librarian-input" type="text" name="username" placeholder="Enter username" autocomplete="off">
+                  <span class="focus-librarian-input"></span>
+                </div>
+                <div class="wrap-librarian-input" data-validate = "Password is required" style="margin-bottom:18px;">
+                  <span class="label-librarian-input">Password</span>
+                  <input class="librarian-input" type="password" name="pass" placeholder="Enter password">
+                  <span class="focus-librarian-input"></span>
+                </div>
+                <div class="librarian-flex-sb-m" style="padding-bottom:30px; width:100%;">
+                  <div>
+                    <a href="#" class="librarian-txt1">
+                      Forgot Password?
+                    </a>
+                  </div>
+                </div>
+                <div class="container-librarian-login-form-btn" style="display:flex;">
+                  <button class="login-librarian-form-btn">
+                    Login
+                  </button>
+                  <button class="cancel-librarian-form-btn" data-dismiss="modal" style="background-color: #ed553b">
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+          <!-- End of Librarian MOdal -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of modal - 2 -->
+
+    <!-- modal - 3 -->
+    <!-- Popup MOdal - Staff -->
+      <div class="user-modal">
+          <div class="user-modal-container">
+            <ul class="switcher" style="padding:unset;">
+              <li><a href="#0">Sign in</a></li>
+              <li><a href="#0">New account</a></li>
+            </ul>
+            <div id="login">
+              <form class="form">
+                <p class="fieldset">
+                  <label class="image-replace email" for="signin-staff-id">Staff ID</label>
+                  <input class="full-width has-padding has-border" id="signin-staff-id" type="email" placeholder="Staff ID">
+                  <!-- <span class="error-message">An account with this email address does not exist!</span> -->
+                </p>
+                <p class="fieldset">
+                  <label class="image-replace password" for="signin-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+                  <a href="#0" class="hide-password">Show</a>
+                  <!-- <span class="error-message">Wrong password! Try again.</span> -->
+                </p>
+                <p class="fieldset">
+                  <input class="full-width" type="submit" value="Login">
+                </p>
+              </form>
+              <p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+              <!-- <a href="#0" class="close-form">Close</a> -->
+            </div>
+            <div id="signup">
+              <form class="form">
+                <p class="fieldset">
+                  <label class="image-replace username" for="signup-id">Staff ID</label>
+                  <input class="full-width has-padding has-border" id="signup-staff-id" type="text" placeholder="Staff ID">
+                  <!-- <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span> -->
+                </p>
+                <p class="fieldset">
+                  <label class="image-replace username" for="signup-username">Staff Name</label>
+                  <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Staff Name">
+                  <!-- <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span> -->
+                </p>
+                <p class="fieldset">
+                  <label class="image-replace username" for="signup-designation">Staff Name</label>
+                  <input class="full-width has-padding has-border" id="signup-designation" type="text" placeholder="Designation">
+                  <!-- <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span> -->
+                </p>
+                <p class="fieldset">
+                  <label class="image-replace email" for="signup-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                  <!-- <span class="error-message">Enter a valid email address!</span> -->
+                </p>
+                <p class="fieldset">
+                  <label class="image-replace password" for="signup-password">Password</label>
+                  <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+                  <a href="#0" class="hide-password">Show</a>
+                  <!-- <span class="error-message">Your password has to be at least 6 characters long!</span> -->
+                </p>
+                <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Create account">
+                </p>
+              </form>
+              <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+
+            <div id="reset-password">
+              <p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+              <form class="form">
+                <p class="fieldset">
+                  <label class="image-replace email" for="reset-email">E-mail</label>
+                  <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                  <!-- <span class="error-message">An account with this email does not exist!</span> -->
+                </p>
+                <p class="fieldset">
+                  <input class="full-width has-padding" type="submit" value="Reset password">
+                </p>
+              </form>
+              <p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+            </div>
+            <a href="#0" class="close-form">Close</a>
+          </div>
+        </div>
+      <!-- End of Staff MOdal -->
+    <!-- end of modal -3 -->
+
+    <!-- Footer Section -->
+    <footer class="page-footer font-small" id=footer>
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright: Department of Mathematics, AU
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script\particles.js" charset="utf-8"></script>
+    <script src="script\app.js" charset="utf-8"></script>
+    <script src="script\dummyStaffScript.js" charset="utf-8"></script>
+  </body>
+</html>
